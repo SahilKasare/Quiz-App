@@ -3,7 +3,16 @@ import cors from 'cors';
 import fetch from 'node-fetch';
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+
+
+const corsOptions = {
+  origin: 'https://genetics-and-evolution-quiz.vercel.app/',
+  credentials: true,
+}
+
+app.use(cors(corsOptions))
+
 
 app.get('/api/quiz', async (req, res) => {
   const response = await fetch('https://api.jsonserve.com/Uw5CrX');
