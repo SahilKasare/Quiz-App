@@ -7,7 +7,7 @@ const app = express();
 
 
 const corsOptions = {
-  origin: 'https://genetics-and-evolution-quiz.vercel.app/',
+  origin: 'https://genetics-and-evolution-quiz.vercel.app',
   credentials: true,
 }
 
