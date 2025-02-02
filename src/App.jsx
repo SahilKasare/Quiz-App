@@ -11,7 +11,7 @@ function App() {
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/quiz')
+    axios.get('https://quiz-app-wafh.onrender.com/api/quiz')
       .then(response => {
         setQuizData(response.data);
         setLoading(false);
